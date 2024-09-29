@@ -1,11 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--이 html 의 버전을 이야기하는 것, 현재는 5버전-->
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>html basic</title>
   </head>
+  <!--이 웹사이트에 대한 부가적인 정보들이 head에 들어간다-->
   <body>
-    <h1>test</h1>
+    안녕하세요<br />나는 라용입니다.
+    <!--줄바꿈 명령어를 써야 줄바꿈이 생긴다. br 태그, /를 배도 되지만 최대한 정확히 표현하려면 /써야 함, 브라우저가 알아서 알아듣기도 하지만 못 알아들을 수도 있을 것-->
+    <img
+      src="https://velog.velcdn.com/images/rayong/post/f1e081a0-1e8f-4869-ade9-0d7f55a479c2/image.png
+      "
+      alt="대체 설명쓰기"
+      width="100px"
+    />
+    <!--네이버 브런치 이미지는 이미지 안 가져와 지네.. 막은 건가-->
+    <p>
+      문장을 쓸 때 사용하는 p 태그는 알아두면 좋지만 몰라도 상관없다. 문장이라는
+      것을 명확히 써주어도 좋지만 그냥 다른 태그를 써도 상관은 없지만, 큰 차이는
+      없다. 시각적 차이가 없는. 기본적으로 p 태그는 개발자가 시험을 보거나
+      중요한 사이트라 정석을 지켜야 하는 경우 사용한다.
+    </p>
+    <ul>
+      <li>메뉴1</li>
+      <li>메뉴2</li>
+      <li>메뉴3</li>
+    </ul>
+    <!--목차 만들 때 사용하는 태그, 굉장히 많이 사용한다. 일반적인 상단 네비 메뉴를 쓰거나, 뭔가 정보를 나열해서 보여줄 때 ul, li 태그를 사용한다-->
+    <a href="https://www.naver.com/" target="_blank">네이버로 가자</a>
+    <!--가장 중요한 태그, 홈페이지의 기초, 링크-->
+    <a href="https://www.naver.com/" target="_blank">
+      <img
+        src="https://blog.kakaocdn.net/dn/CNxUY/btqw7dnElRU/HuVZgvpT6J8n4aEYFathEk/img.jpg"
+        alt=""
+        width="300px"
+      />
+    </a>
+    <!--컴퓨터에 저장된 이미지를 넣고 싶다면, 이미지를 같은 폴더에 넣는 게 좋고,src="C://DOCUMENT/ddd.. 다 쓸 필요는 없는. 보통은 ./ 라고 쓰면 이 html 파일이 있는 폴더 기준으로 검색, 상대경로로 검색. html 이 있는 현재 위치를 불러와주는 것. html 명령어 파일 만들어서 쓰는. 
+    같은 폴더 안의 html 로 이동하고 싶다면 ./a.html 로 이동하면 된다. ./ 라는 상대주소 개념을 알고 있어야 함"-->
+    <iframe src="" frameborder="0"></iframe>
+    <!--아이프레임, src는 특정 홈페이지의 일부를 불러올 수 있다? 네이버는 안 된다. 보안적 문제때문.지금은 거의 막아둔 상태. 왜 알려주는가. 유튜브 영상을 쓰고 싶을때, 영상은 안 막아놓는다. 영상에 따라 재생을 못하게 막아놓은 경우도 있다. 유튜브 영상 보여주고 싶을 때 iframe 태그 확인-->
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/_CsGSE5gwTA?si=g9_2FnKPoySPtDTM"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+    <input type="text" placeholder="여기에 긴 줄글을 입력하세요" />
+    <input type="password" />
+    <input type="number" />
+    <input type="phone" />
+    <input type="checkbox" />
+    <input type="checkbox" />
+    <input type="checkbox" />
+    <input type="radio" name="a" />
+    <input type="radio" name="a" />
+    <input type="radio" name="a" />
+    <!--input 태그란? 타입은 인풋에 무엇을 받을지 설정하는 것? 입력하는데 사용,phone 타입은 모바일로 접속할 경우 자판이 자동으로 숫자로 뜬다. 라디오박스는 다중선택이 안되고 체크박스는 됨.라디오에 name 을 동일하게 지정해서 이것들이 하나의 세트여서 개중에 하나만 선택하도록 할 수 있다. -->
+    <select name="" id="">
+      <option value="">옵션1</option>
+      <option value="">옵션2</option>
+      <option value="">옵션3</option>
+    </select>
+    <div>
+      <textarea
+        name=""
+        id=""
+        placeholder="여기에 긴 줄글을 입력하세요"
+      ></textarea>
+      <!--input은 한줄만 입력되고 textarea 는 여러줄 입력이 가능하다.placeholder 를 써서 입력사항에 대한 가이드를 줄 수 있다. input 도 여기도-->
+    </div>
+    <div>이건?</div>
+    <!-- div 는 뭔가를 그룹핑하거나 포장할 때 사용한다. span 도 뭔가 포장할 때 사용 -->
+    <button>회원가입</button>
+    <!--버튼을 a 태그로 감싸주면 버튼을 입력했을 때 해당 링크로 이동할 수 있다.-->
+    <a href="https://naver.com" target="_blank">
+      <button>네이버 버튼</button>
+    </a>
   </body>
+  <!--사이트에 들어갔을 때 보여지는 영역은 body-->
 </html>
