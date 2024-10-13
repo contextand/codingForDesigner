@@ -17,8 +17,11 @@
         display: flex;
         align-items: center;
       }
-      .join .logo img {
+      .join .logo {
         width: 150px;
+      }
+      .join .logo img {
+        width: 100%;
       }
       .join {
         text-align: center;
@@ -30,11 +33,13 @@
         font-size: 18px;
         font-weight: 500;
       }
-      .desc {
+      .join .desc {
         margin-top: 15px;
         font-size: 15px;
         color: #666;
       }
+      /*css 작성은 따로 파일을 분리해서 만든다. 이름도 더 명시적으로 하긴 함.*/
+      /*어디 안에 있는 조인인지 다 써 주어야 하긴 함, 그게 기본이긴 함, 리액트는 브라우저 버전을 안타는? 호환시키는 방법이 여러가지 있지만, css 는 브라우저에서 바로 실행되니..  업데이트 안된 상황에서 css 문법을 바꾸면 그 바꾼 문법이 실행되지 않는 경우가 있는 것. 비효율적이라도 업데이트하기 조심스러운 css. 조금 더 편하게 하는 방법은 sass, 사스.*/
       .input_section {
         margin-top: 10px;
       }

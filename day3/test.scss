@@ -1,0 +1,58 @@
+body {
+  font-family: "Noto Sans KR", system-ui;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.join {
+  .logo {
+    width: 150px;
+    img {
+      width: 100%;
+    }
+  }
+}
+/*css 를 편리하게 만들어준느 사스 기능. 무조건 웬만하면 추천. scss 만들면 코드가 짧아지고, 실수한 것 찾는게 다르다. 확장 프로그램으로 사스 파일 와칭하면 css 파일을 만들어주니 그것을 html 로 연결하면 될 것*/
+
+.join {
+  text-align: center;
+  width: 400px;
+  margin: 0 auto;
+}
+.title {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.join .desc {
+  margin-top: 15px;
+  font-size: 15px;
+  color: #666;
+}
+/*css 작성은 따로 파일을 분리해서 만든다. 이름도 더 명시적으로 하긴 함.*/
+/*어디 안에 있는 조인인지 다 써 주어야 하긴 함, 그게 기본이긴 함, 리액트는 브라우저 버전을 안타는? 호환시키는 방법이 여러가지 있지만, css 는 브라우저에서 바로 실행되니..  업데이트 안된 상황에서 css 문법을 바꾸면 그 바꾼 문법이 실행되지 않는 경우가 있는 것. 비효율적이라도 업데이트하기 조심스러운 css. 조금 더 편하게 하는 방법은 sass, 사스.*/
+.input_section {
+  margin-top: 10px;
+}
+.input_section input {
+  margin-top: 10px;
+  width: 100%;
+  height: 40px;
+  border: 1px solid lightgray;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+.agree_section {
+  margin-top: 10px;
+}
+.bt_section {
+  margin-top: 20px;
+}
+.join_bt {
+  width: 100%;
+  height: 50px;
+  background: black;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+}

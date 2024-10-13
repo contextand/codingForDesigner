@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        width: 400px;
+        height: 500px;
+        background-image: url("./day3/img/back.png");
+        background-size: cover;
+        background-position: right;
+        background-repeat: no-repeat;
+        /* 백그라운드는 이렇게 나눠서 써주는 것이 더 직관적일 것, border 처럼 줄이면 헷갈릴 것, 어떤 것은 css 로 넣고, 어떤것은 html 에서 img 로 넣고. 어떤 표현에 배경으로 깔아주는 것은 백그라운드가 좋고, 그냥 홈페이지의 들어가는 이미지 정보는 html 로 넣는다. 직관적으로. 둘 줄에 무엇을 하든 상관없긴 하다. */
+        border: 2px solid red;
+        display: inline-block;
+      }
+      span {
+        background-color: blue;
+        color: #ffff;
+      }
+    </style>
+  </head>
+  <body>
+    <div>박스 태그, 그룹핑</div>
+    <div>박스 태그, 그룹핑</div>
+    <span>그룹핑 하는, 이 차이는 무엇?</span>
+    <!--스팬은 글자 사이에서 특정 글자에 스타일을 주고 싶을 때 사용, 레이아웃을 건드리지 않고 글자 크기를 바꾸어줄 때 사용하는 것 div 자주 쓰고 span은 잘 안쓴다?-->
+    <span>그룹핑 하는, 이 차이는 무엇?</span>
+    <span>그룹핑 하는, 이 차이는 무엇?</span>
+    <!--div 와 span 의 차이, p 태그 는 기본적으로 여백을 가진다. div 는 없다. p 태그 사이에는 여백이 붙는. div 는 블록형 한줄에 하나씩, 블록이 쌓이 듯. 블록요소 엘리면트, span 은 인라인 요소. 단어끼리 붙는, 인라인 요소는 크기를 가질 수 없는 요소들, 블록 요소에 inline-block 속성을 주면 인라인의 성격을 가져오는, 인라인, 블록, 인라인 블록 잘 써야 함, 인라인 요소 사이의 틈. 글자 사이의 공간, 자간, 인라인이 되면 문자처럼 컴퓨터가 취급함. 자간과 행간이 생김-->
+  </body>
+</html>
