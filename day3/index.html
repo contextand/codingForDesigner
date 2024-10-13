@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .text {
+        position: relative;
+      }
+      .text:nth-child(2) {
+        color: red;
+      }
+      /*2n 은 짝수. 2n-1 하면 1,3,5,7 처럼, 첫번째 요소만 적용하거나, 마지막 것만 last- 이런 건 왠만하면 잘 안 씀. 게시판 백그라운드 약간 주어서 가시성 높이는 경우가 있음. 자주 사용. 2n 형식으로 적용한다. 보더 바텀. 표 선에서 제일 위에만 first-child 를 쓰거나, 좋은 방법은 아니다. 클래스명 지정 안하고, 코딩을 하는 것은 좋은 방법은 아니다. 클래스 명, 이름을 명명해주는 것은, 매칭의 관점도 있지만, 코드 가독성이 너무 안 좋아진다.*/
+      /*피그마 이미지 저장할 때는 1.5배나 2배 를 조정하는 게 좋다. 고해상도 모니터와는 다르다.*/
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        position: absolute;
+        left: 100px;
+        top: 100px;
+      }
+      /*포지션 엡솔루트로 분리하는 것 무분별하게 쓰면 안됨. 다른 요소에 영향을 안주는 것이 장점이자 단점, 도저히 마진 패딩으로 위치 잡는 것이 안될 때 사용해야 하는 것. 무언가 겹쳐서 보여주어야 하는 순간에 써야 한다. 그렇지 않다면 왠만하면 쓰지 않아야 한다. 디자인이 꼬이기 좋다.*/
+      /*부모요소에게 포지션 릴레이티브 쓴다. 앱솔루션과 세트로 쓴다고 보면 된다. 거의 같이 사용한다. 문서 기준으로 앱솔루트 쓰는 경우 별로 없다. postion: relative 를 부모 요소에게!*/
+      /*fixed 는 모니터를 기준으로 고저애준다. 문서 전체를 말하는 것. 모니터는 모니터 화면 기준으로. fixed 를 쓰면 인라인 요소로 변한다? width 100%가 사라지니까? 인라인 요소가 되는지는, 다시 크기를 잡아주면 된다. fixed 하고 나서. 길이 따로 안주고 left 등 방향으로 크기 잡아도 된다. 상단 헤더에 로고 크기 잡을 때, left, right 잡아서 할 수 있음, 픽스드는 릴레이티브 영향 안받음*/
+      /*박스가 두개일 때, 뭔가 겹쳐 있을 때, 무언가를 더 위로 올리고 싶을 때는, z-index 값 조절해준다. 더 높은 값이 위로 올라온다. 우선순위 조절 가능, 10, 20 단위로 써서 중간 단위도 할 수 있음. absolute 쓰다 보면 말려들어가서 안으로 숨겨졌을 가능성 있음. 인덱스 값 조절해서 확인해볼 것*/
+
+      .test {
+        width: 400px;
+        height: 500px;
+        background-image: url("./img/blue.png");
+        background-size: cover;
+        background-position: right;
+        background-repeat: no-repeat;
+        /* 백그라운드는 이렇게 나눠서 써주는 것이 더 직관적일 것, border 처럼 줄이면 헷갈릴 것, 어떤 것은 css 로 넣고, 어떤것은 html 에서 img 로 넣고. 어떤 표현에 배경으로 깔아주는 것은 백그라운드가 좋고, 그냥 홈페이지의 들어가는 이미지 정보는 html 로 넣는다. 직관적으로. 둘 줄에 무엇을 하든 상관없긴 하다. */
+        border: 2px solid red;
+      }
+      span {
+        background-color: blue;
+        color: #ffff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="text">
+      <div class="box"></div>
+      nostrum architecto facere praesentium corrupti sint laboriosam ex fugiat
+      similique, ducimus in quas odio quis amet ratione. Impedit quidem sed illo
+      debitis exercitationem velit non repudiandae, odio assumenda enim corporis
+      iste eos eveniet blanditiis veniam atque sint ipsam. Totam numquam nam
+      autem perferendis qui quis alias, repellat ipsa non debitis incidunt.
+      Animi labore quas nam, earum nihil voluptatibus alias temporibus molestiae
+      vero veniam magnam voluptates, accusamus voluptatum molestias, error sint
+      voluptatem deserunt adipisci beatae. Sunt ad similique consectetur tempore
+      eaque obcaecati excepturi illum commodi laudantium! Ut minus, nihil, eos
+      suscipit, asperiores pariatur architecto sint beatae et minima
+      necessitatibus consectetur repellat expedita repellendus. Sint totam
+      dolore iste corporis, iusto libero doloremque aliquam ut a id. Ab cum
+      quasi ratione eligendi at est vero rerum quibusdam, possimus incidunt
+      fugit distinctio illum repellat libero consectetur beatae, eveniet,
+      laboriosam sunt nam? At, ipsa quos qui ratione rem iure corporis obcaecati
+      tempora molestiae, earum illo dignissimos. Eos, odio quo. Sint, alias
+      laborum! Culpa, odit quasi. Adipisci officia sunt officiis, vitae laborum
+      id quo fuga necessitatibus ullam dicta nihil eius labore, magni, minus
+      maiores dolorum consequuntur accusamus modi ut nemo eos harum. Amet alias
+      quibusdam deserunt sint incidunt cum?
+    </div>
+    <div class="text">
+      <div class="box"></div>
+      nostrum architecto facere praesentium corrupti sint laboriosam ex fugiat
+      similique, ducimus in quas odio quis amet ratione. Impedit quidem sed illo
+      debitis exercitationem velit non repudiandae, odio assumenda enim corporis
+      iste eos eveniet blanditiis veniam atque sint ipsam. Totam numquam nam
+      autem perferendis qui quis alias, repellat ipsa non debitis incidunt.
+      Animi labore quas nam, earum nihil voluptatibus alias temporibus molestiae
+      vero veniam magnam voluptates, accusamus voluptatum molestias, error sint
+      voluptatem deserunt adipisci beatae. Sunt ad similique consectetur tempore
+      eaque obcaecati excepturi illum commodi laudantium! Ut minus, nihil, eos
+      suscipit, asperiores pariatur architecto sint beatae et minima
+      necessitatibus consectetur repellat expedita repellendus. Sint totam
+      dolore iste corporis, iusto libero doloremque aliquam ut a id. Ab cum
+      quasi ratione eligendi at est vero rerum quibusdam, possimus incidunt
+      fugit distinctio illum repellat libero consectetur beatae, eveniet,
+      laboriosam sunt nam? At, ipsa quos qui ratione rem iure corporis obcaecati
+      tempora molestiae, earum illo dignissimos. Eos, odio quo. Sint, alias
+      laborum! Culpa, odit quasi. Adipisci officia sunt officiis, vitae laborum
+      id quo fuga necessitatibus ullam dicta nihil eius labore, magni, minus
+      maiores dolorum consequuntur accusamus modi ut nemo eos harum. Amet alias
+      quibusdam deserunt sint incidunt cum?
+    </div>
+    <div class="text">
+      <div class="box"></div>
+      nostrum architecto facere praesentium corrupti sint laboriosam ex fugiat
+      similique, ducimus in quas odio quis amet ratione. Impedit quidem sed illo
+      debitis exercitationem velit non repudiandae, odio assumenda enim corporis
+      iste eos eveniet blanditiis veniam atque sint ipsam. Totam numquam nam
+      autem perferendis qui quis alias, repellat ipsa non debitis incidunt.
+      Animi labore quas nam, earum nihil voluptatibus alias temporibus molestiae
+      vero veniam magnam voluptates, accusamus voluptatum molestias, error sint
+      voluptatem deserunt adipisci beatae. Sunt ad similique consectetur tempore
+      eaque obcaecati excepturi illum commodi laudantium! Ut minus, nihil, eos
+      suscipit, asperiores pariatur architecto sint beatae et minima
+      necessitatibus consectetur repellat expedita repellendus. Sint totam
+      dolore iste corporis, iusto libero doloremque aliquam ut a id. Ab cum
+      quasi ratione eligendi at est vero rerum quibusdam, possimus incidunt
+      fugit distinctio illum repellat libero consectetur beatae, eveniet,
+      laboriosam sunt nam? At, ipsa quos qui ratione rem iure corporis obcaecati
+      tempora molestiae, earum illo dignissimos. Eos, odio quo. Sint, alias
+      laborum! Culpa, odit quasi. Adipisci officia sunt officiis, vitae laborum
+      id quo fuga necessitatibus ullam dicta nihil eius labore, magni, minus
+      maiores dolorum consequuntur accusamus modi ut nemo eos harum. Amet alias
+      quibusdam deserunt sint incidunt cum?
+    </div>
+    <div class="test">박스 태그, 그룹핑</div>
+    <span>그룹핑 하는, 이 차이는 무엇?</span>
+    <!--스팬은 글자 사이에서 특정 글자에 스타일을 주고 싶을 때 사용, 레이아웃을 건드리지 않고 글자 크기를 바꾸어줄 때 사용하는 것 div 자주 쓰고 span은 잘 안쓴다?-->
+    <span>그룹핑 하는, 이 차이는 무엇?</span>
+    <span>그룹핑 하는, 이 차이는 무엇?</span>
+    <!--div 와 span 의 차이, p 태그 는 기본적으로 여백을 가진다. div 는 없다. p 태그 사이에는 여백이 붙는. div 는 블록형 한줄에 하나씩, 블록이 쌓이 듯. 블록요소 엘리면트, span 은 인라인 요소. 단어끼리 붙는, 인라인 요소는 크기를 가질 수 없는 요소들, 블록 요소에 inline-block 속성을 주면 인라인의 성격을 가져오는, 인라인, 블록, 인라인 블록 잘 써야 함, 인라인 요소 사이의 틈. 글자 사이의 공간, 자간, 인라인이 되면 문자처럼 컴퓨터가 취급함. 자간과 행간이 생김-->
+  </body>
+</html>

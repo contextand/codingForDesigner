@@ -1,0 +1,47 @@
+@charset "UTF-8";
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+.header .logo {
+  position: fixed;
+  left: 24px;
+  top: 24px;
+}
+.header .menu {
+  position: fixed;
+  right: 24px;
+  top: 24px;
+  font-size: 20px;
+  font-weight: 900;
+  color: white;
+}
+.header .menu li {
+  margin-left: 20px;
+  text-transform: uppercase;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  background-image: url("./img/background.jpg");
+}
+.main .main_title {
+  font-family: "Alfa Slab One", serif;
+  font-size: 20vw;
+  font-weight: 900;
+  letter-spacing: 30;
+  color: white;
+  text-align: center;
+  line-height: 100vh;
+  /*라인하이트로 100 맞춰서 세로 맞춤이 가능하다.*/
+}/*# sourceMappingURL=work.css.map */
