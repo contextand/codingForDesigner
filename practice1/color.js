@@ -5,7 +5,7 @@ const background = document.querySelector(".background");
 
 const changeRed = (e) => {
   // console.log(e.target.innerText);
-  background.classList.add("orangered");
+  background.classList.add("orangered", "bold");
 };
 const changeBlue = (e) => {
   // console.log(e.target.innerText);

@@ -54,4 +54,8 @@ h1 {
 
 .greenyellow {
   background-color: greenyellow;
-}/*# sourceMappingURL=style.css.map */
+}
+
+.bold {
+  font-weight: 900;
+} /*# sourceMappingURL=style.css.map */

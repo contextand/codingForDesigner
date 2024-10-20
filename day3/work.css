@@ -1,4 +1,3 @@
-@charset "UTF-8";
 body {
   font-family: "Noto Sans KR", sans-serif;
   margin: 0;
@@ -12,6 +11,9 @@ li {
   display: inline-block;
 }
 
+.header {
+  mix-blend-mode: difference;
+}
 .header .logo {
   position: fixed;
   left: 24px;
@@ -24,6 +26,7 @@ li {
   font-size: 20px;
   font-weight: 900;
   color: white;
+  line-height: 50px;
 }
 .header .menu li {
   margin-left: 20px;
@@ -43,5 +46,4 @@ li {
   color: white;
   text-align: center;
   line-height: 100vh;
-  /*라인하이트로 100 맞춰서 세로 맞춤이 가능하다.*/
 }/*# sourceMappingURL=work.css.map */

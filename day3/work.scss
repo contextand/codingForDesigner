@@ -12,10 +12,15 @@ li {
 }
 
 .header {
+  // css 상에 네비게이션 메뉴 디퍼런트 모드 해줄 수 있음
+  mix-blend-mode: difference;
+  // 일반적인 홈페이지에서 잘 사용하진 않음. 브라우저 지원하긴 하지만 약간 불안정? 크롬은 괜찮음, 버그가 있기 때문에 약간 위험함.
+
   .logo {
     position: fixed;
     left: 24px;
     top: 24px;
+    //레프트 탑은 무조건 포지션과 같이 쓴다. 포지션과 세트다.
   }
   .menu {
     position: fixed;
@@ -24,6 +29,8 @@ li {
     font-size: 20px;
     font-weight: 900;
     color: white;
+    line-height: 50px;
+    // 한줄이라 라인하르트 적용 안할 수 있지만, 적용하냐에 따라 높이가 달라진다. 피그마에서 설정한 높이값이 있다면 그것을 그대로 적용하는 것이 좋다. 적용안하면 브라우저가 적당한 값을 적용한다. 이런 디테일을 알고 있어야. 퍼블리싱 했을 때 이상한 부분 찾아내야 한다.
     li {
       margin-left: 20px;
       text-transform: uppercase;
@@ -43,6 +50,7 @@ li {
     color: white;
     text-align: center;
     line-height: 100vh;
-    /*라인하이트로 100 맞춰서 세로 맞춤이 가능하다.*/
+    //라인하이트도 100 맞춰서 세로 맞춤이 가능하다.
+    //행간이 100이 됨. 한 줄이 아닌 두 줄 이상이 되면 문제다.
   }
 }
