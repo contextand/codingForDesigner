@@ -1,0 +1,45 @@
+/* reset */
+body,
+ul,
+li,
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* typography */
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.4rem;
+}
+
+h1 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/* components */
+.wrapper {
+  margin: 10rem 0 0 10rem;
+}
+.wrapper h1 {
+  margin: 0 0 5rem 1.2rem;
+  font-size: 2rem;
+  font-weight: 900;
+}
+.wrapper .box li {
+  font-size: 12rem;
+  font-weight: 100;
+  line-height: 1.1;
+}
+
+.red-change {
+  background-color: red;
+}/*# sourceMappingURL=style.css.map */
