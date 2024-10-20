@@ -1,0 +1,61 @@
+ul,
+li,
+body {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  color: #222;
+}
+
+.header {
+  display: flex;
+  height: 50px;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  right: 0;
+  padding: 0 40px;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-weight: 500;
+  border-bottom: 1px solid black;
+  background-color: #fcfbf8;
+  .cate_menu {
+    display: flex;
+    gap: 20px;
+  }
+  .my_menu {
+    display: flex;
+    gap: 20px;
+    text-transform: uppercase;
+  }
+}
+
+.pr_items {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  .pr_item {
+    position: relative;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    box-sizing: border-box;
+    width: 50%;
+    line-height: 0;
+    // 전체 행간에 인라인 높이 생길 때 조절하는 법. 조절하고 텍스트 행간은 다시 정리를 해주어야 함.
+    .pr_img {
+      img {
+        width: 100%;
+      }
+    }
+    .pr_info {
+      position: absolute;
+      line-height: 20px;
+      left: 80px;
+      top: 100px;
+    }
+  }
+}
