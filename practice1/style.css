@@ -34,9 +34,11 @@ h1 {
   font-size: 2rem;
   font-weight: 900;
 }
+.wrapper .box {
+  font-weight: 100;
+}
 .wrapper .box li {
   font-size: 12rem;
-  font-weight: 100;
   line-height: 1.1;
 }
 
@@ -46,16 +48,20 @@ h1 {
 
 .orangered {
   background-color: orangered;
+  transition: 1s;
 }
 
 .dodgerblue {
   background-color: dodgerblue;
+  transition: 1s;
 }
 
 .greenyellow {
   background-color: greenyellow;
+  transition: 1s;
 }
 
 .bold {
   font-weight: 900;
+  transition: 1s;
 }/*# sourceMappingURL=style.css.map */

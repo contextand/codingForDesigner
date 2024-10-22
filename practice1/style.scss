@@ -28,6 +28,7 @@ h1 {
 }
 
 /* components */
+
 .wrapper {
   margin: 10rem 0 0 10rem;
   h1 {
@@ -36,9 +37,9 @@ h1 {
     font-weight: 900;
   }
   .box {
+    font-weight: 100;
     li {
       font-size: 12rem;
-      font-weight: 100;
       line-height: 1.1;
     }
   }
@@ -50,13 +51,20 @@ h1 {
 
 .orangered {
   background-color: orangered;
+  transition: 1s;
 }
+
 .dodgerblue {
   background-color: dodgerblue;
+  transition: 1s;
 }
+
 .greenyellow {
   background-color: greenyellow;
+  transition: 1s;
 }
+
 .bold {
   font-weight: 900;
+  transition: 1s;
 }
