@@ -2,35 +2,24 @@ const red = document.querySelector(".red");
 const blue = document.querySelector(".blue");
 const yellow = document.querySelector(".yellow");
 const background = document.querySelector(".background");
+const star = document.querySelector(".star");
+const span = document.createElement("span");
 
-const changeRed = (e) => {
-  background.classList.add("orangered");
-  red.classList.add("bold");
+const changeColor = (e) => {
+  background.classList.add(`${e.target.innerText}`);
+  e.srcElement.classList.add("bold");
+  // e.srcElement.appendChild(span);
+  // span.innerText = " is..";
 };
-const changeRedOut = (e) => {
-  background.classList.remove("orangered");
-  red.classList.remove("bold");
-};
-const changeBlue = (e) => {
-  background.classList.add("dodgerblue");
-  blue.classList.add("bold");
-};
-const changeBlueOut = (e) => {
-  background.classList.remove("dodgerblue");
-  blue.classList.remove("bold");
-};
-const changeYellow = (e) => {
-  background.classList.add("greenyellow");
-  yellow.classList.add("bold");
-};
-const changeYellowOut = (e) => {
-  background.classList.remove("greenyellow");
-  yellow.classList.remove("bold");
+const changeColorBack = (e) => {
+  background.classList.remove(`${e.target.innerText}`);
+  e.srcElement.classList.remove("bold");
+  // e.srcElement.removeChild(span);
 };
 
-red.addEventListener("mouseover", changeRed);
-red.addEventListener("mouseout", changeRedOut);
-blue.addEventListener("mouseover", changeBlue);
-blue.addEventListener("mouseout", changeBlueOut);
-yellow.addEventListener("mouseover", changeYellow);
-yellow.addEventListener("mouseout", changeYellowOut);
+red.addEventListener("mouseover", changeColor);
+red.addEventListener("mouseout", changeColorBack);
+blue.addEventListener("mouseover", changeColor);
+blue.addEventListener("mouseout", changeColorBack);
+yellow.addEventListener("mouseover", changeColor);
+yellow.addEventListener("mouseout", changeColorBack);
