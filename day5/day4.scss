@@ -1,0 +1,86 @@
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+ul,
+li {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.header {
+  height: 50px;
+  position: fixed;
+  z-index: 999;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  // start center end 로 방향이 잡는 다. 저스티파이 는~
+  padding: 0px 40px;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-weight: 500;
+  border-bottom: 1px solid #121212;
+  background-color: #fefaf5;
+  .cate_menu {
+    display: flex;
+    gap: 20px;
+    .menu {
+      color: red;
+      &.blue {
+        color: blue;
+      }
+    }
+    // 이런 식으로 & 적용 가능
+
+    // 좌우 메뉴들의 좌우 폭을 맞추면 로고가 가운데로 올 것
+  }
+  .logo {
+    position: absolute;
+    left: calc(50% - 100px);
+    // left: 50%;
+    //이거 왜 안되지?
+    // - 기호 좌우 옆에 공간 있어야 하는 듯. 여백 필요
+    top: 12px;
+  }
+  .my_menu {
+    display: flex;
+    gap: 20px;
+  }
+}
+
+.pr_items {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  .pr_item {
+    width: 50%;
+    position: relative;
+    // 문서를 기준으로 위치 잡는 경우는 없다. 이렇게 상위 박스를 기준으로 잡는 것. absolute 쓰고 나서 relative 를 무조건 쓴다고 생각하라.
+    // 선을 가운데만 주고 싶다면, nth 활용 .pr_item:nth-child(2n)
+    box-sizing: border-box;
+    border-bottom: 1px solid #121221;
+    &:nth-child(2n) {
+      border-left: 1px solid #121212;
+    }
+    // & 는 해당 요소의 상위 것을 선택해서 적용하는
+    // 특정 요소들을 강조하는 방법임.
+    .pr_img {
+      img {
+        width: 100%;
+        // img 태그에 디스플레이 block 해버리면 행간 설정으로 조절하지 않아도 된다. 제일 깔금한 방법
+      }
+    }
+    .pr_info {
+      position: absolute;
+      // 포지션을 빼먹고 탑, 레프트 쓰지 않도록
+      top: 100px;
+      left: 80px;
+    }
+  }
+}

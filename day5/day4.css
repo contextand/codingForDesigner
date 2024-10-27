@@ -1,0 +1,72 @@
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+ul,
+li {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.header {
+  height: 50px;
+  position: fixed;
+  z-index: 999;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 40px;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-weight: 500;
+  border-bottom: 1px solid #121212;
+  background-color: #fefaf5;
+}
+.header .cate_menu {
+  display: flex;
+  gap: 20px;
+}
+.header .cate_menu .menu {
+  color: red;
+}
+.header .cate_menu .menu.blue {
+  color: blue;
+}
+.header .logo {
+  position: absolute;
+  left: calc(50% - 100px);
+  top: 12px;
+}
+.header .my_menu {
+  display: flex;
+  gap: 20px;
+}
+
+.pr_items {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+.pr_items .pr_item {
+  width: 50%;
+  position: relative;
+  box-sizing: border-box;
+  border-bottom: 1px solid #121221;
+}
+.pr_items .pr_item:nth-child(2n) {
+  border-left: 1px solid #121212;
+}
+.pr_items .pr_item .pr_img img {
+  width: 100%;
+}
+.pr_items .pr_item .pr_info {
+  position: absolute;
+  top: 100px;
+  left: 80px;
+}/*# sourceMappingURL=day4.css.map */

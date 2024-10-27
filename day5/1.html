@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: flex;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /*가운데 정렬하면서 세로 정렬하고 싶다면 이렇게, 그냥 두어도 세로정렬이지만 이렇게 하는 이유는 플레스 속성을 적용해서 정렬을 하고 싶으니, 가로 나열이 아닌 세로 나열인 상황에 사용하는 것. 마진 오토는 다른 것과 섞여서 적용 안되는 경우가 있으니 지양한다.*/
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        border: 1px solid yellow;
+        /* transition-duration: 1s; */
+        /*애니메이션 속도 조절하기*/
+        /* animation: move 2s 4; */
+        /*아래 만든 키프레임을 적용하는 방법, 마지막에 끝나게 하는 것들도 있고, forwards, opacity 적용도 되고. from to 도 있음
+        애니메이션 단축으로 적는 방법임.*/
+        transform: translate(100px, 100px);
+        /* 이동하는 것? 마진으로 이동하지 않는 이유는? 트랜스폼은 다른 것에 영향을 안 미치고 이동할 수 있는 방법. 포지션 안 쓰고 이 자체만 이동시키는 방법으로 많이 쓰는가?, 왠만하면 쓰지 않아야 함. 레이아웃을 잘 때는 다른 것에 영향을 주는 것이 맞다. 앱솔루트로 레이아웃 짜면 꼬이기 좋은 것처럼, 트랜스폼으로 레이아웃 짜면 꼬일 가능성이 크다. 애니메이션 줄 때만 써야 함*/
+      }
+      @keyframes move {
+        0% {
+          width: 100px;
+          opacity: 0;
+        }
+        100% {
+          width: 500px;
+          opacity: 100;
+        }
+      }
+      .wrapper {
+        font-size: 50pt;
+        width: 1000px;
+        animation: text_move 10s infinite;
+      }
+      /* 이렇게 글자 움직이는 것도 일단은 가능 */
+      @keyframes text_move {
+        0% {
+          transform: translate(0);
+        }
+        100% {
+          transform: translate(-400px);
+        }
+      }
+      /* .box:hover {
+        background-color: blue;
+        width: 200px;
+      } */
+      /*자바스크립트 라이브러리로 넣는 게 좋음. 있다는 것만 알아두고 위에 말한 것을 쓰는 것은 권장하지 않는다. 생각보다 쓸 일은 별로 없고 엄청 예쁘게 만들기는 쉽지 않다. 호버나 트랜스듀레이션 기억해둘 것*/
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      dsfsdfsdfsddsfsdfsdfsddsfsdfsdfsddsfsdfsdfsddsfsdfsdfsddsfsdfsdfsddsfsdfsdfsdfsdfsdfsdfsdfsdfsdffs
+    </div>
+    <div class="container">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+  </body>
+</html>

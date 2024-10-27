@@ -1,0 +1,14 @@
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+ul,
+li {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+//html 제일 첫 요소에 마진으로 간격을 벌리면 가끔씩 깨진다. 첫번째 메인 요소의 상단 공간을 벌릴 때는 패딩으로 공간을 벌리는 것이 좋다.
+// overflow:hidden 으로 호버시 넘쳐나는 이미지 가려줘야 한다. 이미지에 호버 걸면 안된다. 겉의 박스에다 해야 함. 이미지에 걸면 이미지 위에 다른 텍스트로 마우스가 넘아가면 인터랙션이 풀려버린다.호버했을때 이미지박스를 키워라 하면 될 것임
+//flex 1 로 잡는 것은 가로 배치를 3개씩만 할 경우에 해당한다.
