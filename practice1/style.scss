@@ -14,12 +14,15 @@ li {
 
 /* typography */
 
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
 :root {
   font-size: 62.5%;
 }
 
 body {
   font-size: 1.4rem;
+  font-family: "Noto Sans", sans-serif;
 }
 
 h1 {
@@ -38,37 +41,31 @@ h1 {
   }
   .box {
     font-weight: 100;
+    display: inline-block;
     li {
       font-size: 12rem;
       line-height: 1.1;
+      // background-color: gray;
     }
   }
 }
 
-.red-change {
-  background-color: red;
-}
-
 .orangered {
   background-color: orangered;
-  transition: 1s;
+  transition: 1.5s;
 }
 
 .dodgerblue {
   background-color: dodgerblue;
-  transition: 1s;
+  transition: 1.5s;
 }
 
 .greenyellow {
   background-color: greenyellow;
-  transition: 1s;
+  transition: 1.5s;
 }
 
 .bold {
   font-weight: 900;
   transition: 1s;
-}
-
-.display {
-  display: none;
 }
