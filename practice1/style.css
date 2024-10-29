@@ -44,6 +44,33 @@ h1 {
   font-size: 12rem;
   line-height: 1.1;
 }
+.wrapper .red_imgbox {
+  position: absolute;
+  top: 10%;
+  right: 100px;
+  width: 30%;
+}
+.wrapper .red_imgbox img {
+  width: 100%;
+}
+.wrapper .blue_imgbox {
+  position: absolute;
+  top: 20%;
+  right: 100px;
+  width: 30%;
+}
+.wrapper .blue_imgbox img {
+  width: 100%;
+}
+.wrapper .yellow_imgbox {
+  position: absolute;
+  top: 13%;
+  right: 100px;
+  width: 30%;
+}
+.wrapper .yellow_imgbox img {
+  width: 100%;
+}
 
 .orangered {
   background-color: orangered;
@@ -57,10 +84,14 @@ h1 {
 
 .greenyellow {
   background-color: greenyellow;
-  transition: 1.5s;
+  transition: 1s;
 }
 
 .bold {
   font-weight: 900;
-  transition: 1s;
+  transition-duration: 0.5s;
+}
+
+.opacity {
+  opacity: 0;
 }/*# sourceMappingURL=style.css.map */
