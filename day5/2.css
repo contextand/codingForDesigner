@@ -5,8 +5,54 @@ body {
 }
 
 ul,
-li {
+li,
+p {
   margin: 0px;
   padding: 0px;
   list-style: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  position: relative;
+}
+.header .menu {
+  display: flex;
+  gap: 20px;
+}
+
+.main {
+  padding: 0 20px;
+}
+.main .main_copy {
+  margin-top: 100px;
+  padding-bottom: 20px;
+}
+.main .main_items {
+  display: flex;
+  gap: 15px;
+}
+.main .main_items .item {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.main .main_items .item:hover .item_img {
+  transform: scale(1.2);
+  transition-duration: 2s;
+}
+.main .main_items .item .item_img img {
+  width: 100%;
+}
+.main .main_items .item .item_info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }/*# sourceMappingURL=2.css.map */
