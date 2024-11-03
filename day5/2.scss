@@ -39,10 +39,10 @@ p {
       &:hover {
         .item_img {
           transform: scale(1.2);
-          transition-duration: 2s;
         }
       }
       .item_img {
+        transition-duration: 2s;
         img {
           width: 100%;
         }

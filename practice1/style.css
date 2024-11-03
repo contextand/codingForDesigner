@@ -41,8 +41,8 @@ h1 {
   display: inline-block;
 }
 .wrapper .box li {
-  font-size: 12rem;
-  line-height: 1.1;
+  font-size: 10rem;
+  line-height: 1.2;
 }
 .wrapper .red_imgbox {
   position: absolute;

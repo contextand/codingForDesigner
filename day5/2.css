@@ -41,6 +41,8 @@ p {
 }
 .main .main_items .item:hover .item_img {
   transform: scale(1.2);
+}
+.main .main_items .item .item_img {
   transition-duration: 2s;
 }
 .main .main_items .item .item_img img {
