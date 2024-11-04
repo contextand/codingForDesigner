@@ -1,55 +1,62 @@
 body {
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: "Noto Sans KR", "Inter", sans-serif;
   margin: 0;
   padding: 0;
   background-color: white;
 }
 
 ul,
-li,
-span {
+li {
   margin: 0;
   padding: 0;
-  display: inline-block;
+  list-style: none;
 }
 
 .header {
   display: flex;
-  position: fixed;
-  top: 20px;
-  left: 20px;
-  right: 20px;
-  mix-blend-mode: difference;
-  // 위험한 스킬이니 안 쓰는 게 좋을 듯
-  color: #fff;
+  align-items: center;
   justify-content: space-between;
+  position: fixed;
+  top: 16px;
+  left: 30px;
+  right: 30px;
+  mix-blend-mode: difference;
+  color: #fff;
   .main_menu {
     display: flex;
     gap: 25px;
-    text-transform: uppercase;
+    font-size: 22px;
+    line-height: 20px;
+    font-weight: 500;
+    margin-top: -4px;
   }
   .mobile_menu {
     display: none;
   }
 }
 
-.content_wrap {
+.contents_wrap {
   .main_copy {
-    padding: 100px 20px 0 20px;
-    font-size: 5vw;
-    line-height: 1;
+    padding-top: 169px;
+    padding-left: 30px;
+    box-sizing: border-box;
+    font-size: 4.1vw;
+    line-height: 4.6vw;
     .blank_t {
-      display: inline-block;
       width: 16vw;
       height: 1px;
+      display: inline-block;
     }
   }
   .business_section {
-    display: flex;
-    justify-content: space-between;
     margin-top: 125px;
-    padding: 0px 20px;
-    font-size: 27px;
+    padding: 0px 30px;
+    box-sizing: border-box;
+    display: flex;
+    font-size: 24px;
+    line-height: 40px;
+    font-weight: 500;
+    justify-content: space-between;
     text-transform: uppercase;
     .bs_container {
       display: flex;
@@ -57,25 +64,70 @@ span {
     }
   }
   .main_img {
-    background-image: url(img/back.jpg);
+    margin-top: 16px;
+    background-image: url("./img/back.jpg");
     background-size: cover;
-    height: 500px;
-    margin-top: 20px;
+    height: 1000px;
+    padding-top: 30px;
+    padding-left: 30px;
     .main_desc {
       color: #fff;
-      width: 500px;
-      padding: 20px;
+      width: 510px;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 24px;
     }
   }
 }
 
 @media only screen and (max-width: 600px) {
   .header {
+    left: 15px;
+    top: 11px;
+    right: 15px;
+    .logo_section {
+      img {
+        height: 12px;
+      }
+    }
     .main_menu {
       display: none;
     }
     .mobile_menu {
       display: block;
+      font-size: 15px;
+      line-height: 21px;
+    }
+  }
+  .contents_wrap {
+    .main_copy {
+      padding-left: 15px;
+      padding-top: 103px;
+      font-size: 5.2vw;
+      // font-size: 17px;
+      // font-size: 16px;
+      line-height: 6.2vw;
+      .blank_t {
+        width: 5vw;
+      }
+    }
+    .business_section {
+      margin-top: 33px;
+      font-size: 15px;
+      line-height: 21px;
+      padding: 0 15px;
+      .bs_container {
+        gap: 18px;
+      }
+    }
+    .main_img {
+      padding: 15px;
+      margin-top: 10px;
+      .main_desc {
+        width: 100%;
+        font-size: 14px;
+        line-height: 19px;
+      }
     }
   }
 }

@@ -1,0 +1,155 @@
+body {
+    font-family: "Noto Sans KR", "Inter", sans-serif;
+    margin: 0px;
+    padding: 0px;
+    background-color: #fff;
+    ;
+}
+
+ul,
+li {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+
+
+.header {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    left: 30px;
+    right: 30px;
+    top: 16px;
+    justify-content: space-between;
+    mix-blend-mode: difference;
+    color: #f1f1f1;
+
+    .main_menu {
+        display: flex;
+        font-size: 22px;
+        line-height: 20px;
+        font-weight: 500;
+        gap: 25px;
+        margin-top: -4px;
+    }
+    .mobile_menu{
+        display:none;
+    }
+}
+
+.contents_wrap {
+    .main_copy {
+        padding-top: 169px;
+        padding-left: 30px;
+        box-sizing: border-box;
+        font-size: 4.1vw;
+        line-height: 4.6vw;
+
+        .blank_t {
+            width: 16vw;
+            height: 1px;
+            display: inline-block;
+        }
+    }
+
+    .business_section {
+        margin-top: 125px;
+        padding: 0px 30px;
+        box-sizing: border-box;
+        display: flex;
+        font-size: 24px;
+        line-height: 40px;
+        font-weight: 500;
+        justify-content: space-between;
+        text-transform: uppercase;
+
+        .bs_container {
+            display: flex;
+            gap: 97px;
+        }
+    }
+
+    .main_img {
+        margin-top:16px;
+        background-image: url("./img/back.jpg");
+        background-size: cover;
+        height: 1000px;
+        padding-top:30px;
+        padding-left:30px;
+
+        .main_desc{
+            width:510px;
+            color: #FFF;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 24px;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    .header{
+        left:15px;
+        top:11px;
+        right:15px;
+        .logo_section{
+            img{
+                height:12px;
+            }
+        }
+        .main_menu{
+            display:none;
+        }
+        .mobile_menu{
+            display:block;
+            font-size:15px;
+            line-height: 21px;;
+        }
+
+    }
+    .contents_wrap{
+        .main_copy{
+            padding-left:15px;
+            padding-top:103px;
+            font-size:5.2vw;
+
+
+            font-size:17px;
+            font-size:16px;
+
+
+           
+            line-height: 6.2vw;
+
+        
+            .blank_t{
+                width: 5vw;
+            }
+        }
+        .business_section{
+            margin-top:33px;
+            font-size:15px;
+            line-height: 21px;;
+            padding:0px 15px;
+            .bs_container{
+                gap: 18px;
+            }   
+        }
+        .main_img{
+            padding:15px;
+            margin-top:10px;
+            .main_desc{
+                width:100%;
+                font-size:14px;
+                line-height: 19px;
+            }
+        }
+    }
+
+
+
+}
