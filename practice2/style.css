@@ -31,6 +31,8 @@ li {
 }
 .header .menu {
   cursor: pointer;
+  display: flex;
+  gap: 32px;
 }
 
 .contents {
@@ -43,17 +45,14 @@ li {
   flex: 2;
 }
 .text_view .text_wrap {
-  position: fixed;
-  top: 50;
-  left: 0;
-  right: 0;
   padding: 40px;
+  height: calc(100vh - 100px);
+  overflow-y: scroll;
 }
 .text_view .text_wrap p {
   word-break: keep-all;
-  width: 60%;
   font-size: 80px;
-  font-weight: 800;
+  font-weight: 900;
   line-height: 1.4;
   letter-spacing: -3px;
 }
@@ -62,13 +61,15 @@ li {
   background-color: #efefef;
   flex: 1;
   z-index: 99;
+  height: 100vh;
+  overflow-y: scroll;
 }
 .list_view .list {
   padding: 20px;
   border-bottom: 1px solid #444;
   border-left: 1px solid #444;
   line-height: 1.7;
-  font-weight: 300;
+  font-weight: 900;
   word-break: keep-all;
 }
 .list_view .list .text {
