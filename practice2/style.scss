@@ -4,10 +4,11 @@ ul,
 li {
   margin: 0;
   padding: 0;
+  color: #444;
 }
 
 body {
-  font-family: "Noto Sans KR", serif;
+  font-family: "Gowun Dodum", sans-serif;
   background-color: #efefef;
 }
 
@@ -36,38 +37,31 @@ li {
 }
 
 .contents {
-  display: flex;
-  margin-top: 49px;
+  padding-top: 50px;
 }
 
 .text_view {
   background-color: #eee;
-  flex: 2;
   .text_wrap {
-    // position: fixed;
-    // top: 50;
-    // left: 0;
-    // right: 0;
+    position: fixed;
+    top: 32px;
+    left: 0;
+    right: 0;
+    width: 55%;
     padding: 40px;
-    height: calc(100vh - 100px);
-    overflow-y: scroll;
     p {
-      // width: 60%;
       word-break: keep-all;
-      font-size: 80px;
-      font-weight: 900;
-      line-height: 1.4;
-      letter-spacing: -3px;
+      font-size: 40px;
+      font-weight: 400;
+      line-height: 1.6;
+      // letter-spacing: -3px;
     }
   }
 }
 
 .list_view {
   background-color: #efefef;
-  flex: 1;
-  z-index: 99;
-  height: 100vh;
-  overflow-y: scroll;
+  padding-left: 60%;
   .list {
     padding: 20px;
     border-bottom: 1px solid #444;
@@ -76,7 +70,9 @@ li {
     font-weight: 900;
     word-break: keep-all;
     .text {
+      font-size: 14px;
       cursor: zoom-in;
+      // background-color: yellow;
     }
   }
 }
